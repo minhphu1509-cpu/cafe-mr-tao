@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-accent: #C88E14;
+}
+
+body {
+    @apply antialiased;
+}

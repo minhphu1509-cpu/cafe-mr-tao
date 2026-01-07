@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr Táo - Tinh hoa Đặc sản Tây Nguyên | Nông sản sạch</title>
+    <meta name="description" content="Chuyên cung cấp cà phê, mắc ca, mật ong rừng nguyên chất từ vùng đất đỏ Bazan Tây Nguyên. Cam kết sạch 100%.">
+    <meta property="og:title" content="Mr Táo - Tinh hoa Đặc sản Tây Nguyên" />
+    <meta property="og:description" content="Nông sản sạch từ đại ngàn Tây Nguyên - Giao hàng toàn quốc." />
+    <meta property="og:type" content="website" />
+    
+    <!-- // Đã loại bỏ Tailwind CDN và Runtime Config để chuyển sang sử dụng Tailwind thông qua Build Tool (Vite/PostCSS) nhằm tối ưu hiệu suất và bảo mật -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <!-- Đã loại bỏ importmap để tránh xung đột với trình đóng gói (Bundler) và chuẩn hóa việc quản lý dependencies -->
+    <style>
+      :root { --brand-accent: #C88E14; } /* // Bổ sung biến CSS Global để định nghĩa chính xác mã màu cho các class tùy chỉnh */
+      * { margin: 0; padding: 0; box-sizing: border-box; } /* // Thiết lập CSS Reset Global để đảm bảo nhất quán trên các trình duyệt */
+      html { scroll-behavior: smooth; }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none; /* // Đảm bảo cấu hình ẩn thanh cuộn hoạt động đồng bộ với CSS Global */
+      }
+    </style>
+  <link rel="stylesheet" href="/index.css"> <!-- // Sửa lỗi Missing Stylesheet: Cấp phép đường dẫn file CSS chính (Line 23) -->
+</head>
+  <body class="bg-[#FAF9F6] text-stone-800 selection:bg-brand-accent selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script> <!-- // Sửa lỗi cú pháp comment và chuẩn hóa đường dẫn module loader -->
+</body>
+</html>

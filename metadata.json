@@ -1,0 +1,9 @@
+
+{
+  "name": "Mr Táo - Tinh Hoa Tây Nguyên",
+  "description": "Website thương mại điện tử đặc sản Tây Nguyên cao cấp, tích hợp trợ lý AI thông minh.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
